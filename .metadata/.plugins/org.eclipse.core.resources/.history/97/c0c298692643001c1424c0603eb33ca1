@@ -1,0 +1,24 @@
+package com.shadow.springBootAngular.services.ProductService;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.shadow.springBootAngular.Repository.ProductsRepo;
+import com.shadow.springBootAngular.model.ProductModel;
+
+@Service
+public class ProductService {
+
+	@Autowired
+	ProductsRepo productRepo;
+	
+	public List<ProductModel> getAllProducts(){
+		return productRepo.findAll();
+	}
+	
+	public ProductModel getProductsById(long productId) throws Exception {
+		return productRepo.findById(productId).orElseThrow(() ->new Exception("Product is not found"));
+	}
+}

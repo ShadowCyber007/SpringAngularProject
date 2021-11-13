@@ -1,0 +1,5 @@
+package com.shadow.springBootAngular.services.CartServices;
+
+public interface CartService {
+
+}

@@ -1,0 +1,27 @@
+package com.shadow.springBootAngular.controller;
+
+
+import java.util.HashMap;
+
+import org.json.JSONObject;
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/signup")
+public class SignupController {
+
+	public ResponseBody<?> UserSignUp(@RequestBody HashMap<String, String> signupRequest){
+		try {
+			
+			JSONObject obj = new JSONObject();
+			return ResponseBody<String>(obj.toString(), HttpStatus.OK);
+		}catch(Exception e) {
+			
+		}
+		
+	}
+}

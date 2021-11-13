@@ -1,0 +1,11 @@
+package com.shadow.springBootAngular.Repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import com.shadow.springBootAngular.model.OrderModel;
+
+@Repository
+public interface OrdersRepo extends JpaRepository<OrderModel, Long> {
+
+}

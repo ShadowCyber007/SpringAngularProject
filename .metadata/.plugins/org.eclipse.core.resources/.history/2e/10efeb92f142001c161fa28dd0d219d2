@@ -1,0 +1,13 @@
+package com.shadow.springBootAngular.services.CartServices;
+
+import java.util.List;
+
+import com.shadow.springBootAngular.model.AddToCartModel;
+
+public interface CartService {
+
+	List<AddToCartModel>  addCartbyUserIdAndProductId(long productId,long userId,int qty,double price) throws Exception;
+	void updateQtyByCartId(long cartId,int qty,double price) throws Exception;
+	List<AddToCartModel> getCartByUserId(long userId);
+	List<AddToCartModel> removeCartByUserId(long cartId,long userId);
+}

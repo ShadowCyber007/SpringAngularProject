@@ -1,0 +1,11 @@
+package com.shadow.springBootAngular.Repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import com.shadow.springBootAngular.model.CategoryModel;
+
+@Repository
+public interface CategoryRepo extends JpaRepository<CategoryModel, Long> {
+
+}

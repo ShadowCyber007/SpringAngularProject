@@ -1,0 +1,5 @@
+package com.shadow.springBootAngular.controller.RequestPojo;
+
+public class LoginRequest {
+
+}

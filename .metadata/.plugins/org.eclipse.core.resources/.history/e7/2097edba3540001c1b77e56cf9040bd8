@@ -1,0 +1,16 @@
+package com.shadow.springBootAngular.services.UserServices;
+
+
+import java.util.HashMap;
+
+import org.springframework.stereotype.Service;
+
+import com.shadow.springBootAngular.model.UserModel;
+
+@Service
+public interface UserService {
+	UserModel findByMobile(String mobile) throws Exception;
+	UserModel getUserDetailById(long userId) throws Exception;
+//	UserModel signUpUser(HashMap<String,String> signupRequest) throws Exception;
+	
+}

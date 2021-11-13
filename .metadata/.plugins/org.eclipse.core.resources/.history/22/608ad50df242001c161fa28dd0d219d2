@@ -1,0 +1,12 @@
+package com.shadow.springBootAngular.Repository;
+
+import java.util.Optional;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.shadow.springBootAngular.model.UserModel;
+
+public interface UsersRepo extends JpaRepository<UserModel, Long>{
+
+	Optional<UserModel> findByMobile(String mobile);
+}

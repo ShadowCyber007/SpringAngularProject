@@ -1,0 +1,12 @@
+package com.shadow.springBootAngular.services.CartServices;
+
+import java.util.List;
+
+import com.shadow.springBootAngular.model.AddToCartModel;
+
+public interface CartService {
+
+	List<AddToCartModel> addCartbyUserIdAndProductId();
+	List<AddToCartModel> getCartByUserId();
+	List<AddToCartModel> removeCartByUserId();
+}

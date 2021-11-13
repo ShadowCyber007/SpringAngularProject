@@ -1,0 +1,13 @@
+1636340567444	Rename package 'com.shadow.springBootAngular.services.OrderAndCartServices'
+1636659181061	Rename compilation unit 'AddToCartModel.java'
+1636659218929	Rename compilation unit 'CategoryModel.java'
+1636659280234	Rename type 'ProductModel'
+1636659294187	Rename type 'UserModel'
+1636659329007	Rename type 'OrderModel'
+1636659670922	Rename compilation unit 'AddToCartController.java'
+1636660751711	Rename type 'OrdersRepo'
+1636660810986	Rename compilation unit 'ProductsRepo.java'
+1636660887860	Rename compilation unit 'UsersRepo.java'
+1636660899714	Rename compilation unit 'UsersRepository.java'
+1636661262635	Move compilation unit
+1636661272732	Delete element
